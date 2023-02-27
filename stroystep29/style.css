@@ -1,0 +1,52 @@
+*{
+    font-family: 'Exo 2';
+}
+
+.header {
+    background: #FFFFFF;
+}
+
+.address{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+}
+
+.number{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+}
+
+.list-group{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #B0B0B0;
+
+    margin: 0;
+    padding: 4px;
+}
+
+.site_title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #003164;
+}
+
+.list-group-item :hover{
+    color: #003164;
+    decoration: underline;
+}
+
+list-group .list-group-item{
+    display: inline;
+    margin-right: 5px;
+}
