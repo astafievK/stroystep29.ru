@@ -1,5 +1,16 @@
-*{
+* {
     font-family: 'Exo 2', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited {
+    color: #B0B0B0;
+    text-decoration: none;
 }
 
 .small_header {
@@ -7,7 +18,7 @@
     height: 30px;
 }
 
-.address{
+.address {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -16,7 +27,7 @@
     padding-top: 5px;
 }
 
-.number{
+.number {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -25,7 +36,7 @@
     padding-top: 6px;
 }
 
-.site_title{
+.site_title {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -35,26 +46,63 @@
     horiz-align: left;
 }
 
-nav > div:hover{
+nav > div > a:hover {
     color: #003164;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
-nav > div{
-    display: inline;
-    justify-content: space-between;
+nav > div > a::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #003164;
+    bottom: 0;
+    transition: all 0.5s ease-in-out;
+    left: 50%;
+    margin: 0 auto;
+}
+
+nav > div > a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+nav > div > a {
+    display: inline-block;
     margin-right: 16px;
     font-weight: 700;
     font-size: 15px;
-    color: #B0B0B0;
     text-decoration: none;
+    transition: all 0.5s ease;
+    position: relative;
 }
 
-nav{
-    padding-top: 20px;
+nav {
+    padding-top: 15px;
     horiz-align: right;
+    height: 100%;
 }
 
-header{
+header {
     height: 50px;
+}
+
+header > .container{
+    height: 100%;
+}
+
+.info_window {
+    position: relative;
+    height: 228px;
+    width: 407px;
+    margin: 101px 0 0 0;
+    background: #003164;
+}
+
+.main_image {
+    width: 100%;
+    position: absolute;
+
+
 }
