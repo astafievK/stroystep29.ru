@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+img{
+    user-select: none;
+}
+
 a, a:link, a:visited {
     color: #B0B0B0;
     text-decoration: none;
@@ -42,8 +46,9 @@ a, a:link, a:visited {
     font-size: 32px;
     line-height: 38px;
     color: #003164;
-    padding-top: 8px;
-    horiz-align: left;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    text-align: left;    
 }
 
 nav > div > a:hover {
@@ -58,7 +63,7 @@ nav > div > a::before {
     width: 0;
     background-color: #003164;
     bottom: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.35s ease-in-out;
     left: 50%;
     margin: 0 auto;
 }
@@ -74,7 +79,7 @@ nav > div > a {
     font-weight: 700;
     font-size: 15px;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.35s ease;
     position: relative;
 }
 
@@ -98,11 +103,56 @@ header > .container{
     width: 407px;
     margin: 101px 0 0 0;
     background: #003164;
+    padding-left: 27px;
+    padding-right: 27px;;
 }
 
 .main_image {
     width: 100%;
     position: absolute;
-
-
 }
+
+.info_window_title{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 23px;
+}
+
+.info_window_line{
+    margin-top: 5px;
+    font-style: bold;
+}
+
+.info_window_descr{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.info_window_buttons{
+    margin-top: 18px;
+}
+
+
+
+.info_window_button_left{
+    width: 150px;    
+}
+
+.info_window_right{
+    width: 190px;
+}
+
+.info_window_button_left, .info_window_button_right{
+    height: 32px;
+    background-color: #003164;
+    border-color: #FFFFFF;
+    border-width: 1px;
+}
+
